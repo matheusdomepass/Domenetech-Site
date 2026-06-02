@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #222;
+}
+
+h1,
+h2,
+h3 {
+    color: #1f2937;
+}
+
+p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.navbar-container {
+    width: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    height: 80px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    width: 100px;
+    display: block;
+}
+
+.navbar-items {
+    display: flex;
+    gap: 26px;
+    list-style: none;
+}
+
+.navbar-items a {
+    color: #374151;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar-items a:hover {
+    color: #5193d1;
+}
+
+.main-banner {
+    min-height: 640px;
+    background-image: linear-gradient(rgba(6, 23, 45, 0.72), rgba(6, 23, 45, 0.72)), url('../img/s17Qi.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 7rem 8%;
+}
+
+.banner-content {
+    max-width: 900px;
+}
+
+.subtitle {
+    color: #93c5fd;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.main-banner h1 {
+    color: #fff;
+    font-size: 56px;
+    margin-bottom: 22px;
+}
+
+.main-banner p {
+    color: #e5e7eb;
+    font-size: 24px;
+}
+
+.banner-buttons,
+.contact-actions {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 15px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #5193d1;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background-color: #3d7fbd;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    border: 2px solid #5193d1;
+    color: #5193d1;
+    background-color: #fff;
+}
+
+.secondary-btn:hover {
+    background-color: #eef6ff;
+    transform: translateY(-2px);
+}
+
+.section-title {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 50px;
+}
+
+.section-title h2,
+.contact-container h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.section-title p,
+.contact-container p {
+    font-size: 20px;
+}
+
+.about-container,
+.services-container,
+.projects-container {
+    padding: 5rem 8%;
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.about-content > div,
+.about-card,
+.project-card,
+.services-container li {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.about-content h3,
+.project-card h3,
+.services-container h3 {
+    margin-bottom: 16px;
+}
+
+.services-container ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-container li {
+    list-style: none;
+    text-align: center;
+}
+
+.fas,
+.fab {
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.fa-code,
+.fa-gears,
+.fa-chart-line,
+.fa-computer,
+.fa-whatsapp {
+    color: #5193d1;
+}
+
+.projects-container {
+    background-color: #eef4fb;
+}
+
+.projects-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.gerenciador-tarefas img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 24px;
+    display: block;
+}
+
+.roleta img{
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 24px;
+    display: block;
+}
+
+.barbearia img{
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 24px;
+    display: block;
+}
+
+.project-card {
+    min-height: 280px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    font-weight: bold;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.techs {
+    margin-top: 18px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.contact-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 5rem 8%;
+}
+
+.contact-note {
+    margin-top: 22px;
+    font-size: 15px !important;
+    color: #6b7280;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 24px;
+    background-color: #0f172a;
+}
+
+footer p {
+    color: #fff;
+}
+
+@media (max-width: 1000px) {
+    .services-container ul,
+    .projects-grid,
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-banner h1 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        height: auto;
+        padding: 14px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar-items {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-items a {
+        font-size: 12px;
+    }
+
+    .main-banner {
+        min-height: 560px;
+        padding: 5rem 5%;
+    }
+
+    .main-banner h1 {
+        font-size: 34px;
+    }
+
+    .main-banner p {
+        font-size: 18px;
+    }
+
+    .services-container ul,
+    .projects-grid,
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2,
+    .contact-container h2 {
+        font-size: 30px;
+    }
+
+    .about-container,
+    .services-container,
+    .projects-container,
+    .contact-container {
+        padding: 4rem 5%;
+    }
+}
