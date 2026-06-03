@@ -269,6 +269,12 @@ nav {
     margin-bottom: 18px;
 }
 
+.project-card a {
+    margin-top: 16px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
 .techs {
     margin-top: 18px;
     font-weight: bold;
@@ -298,6 +304,35 @@ footer p {
     color: #fff;
 }
 
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    background: #25D366;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.3);
+
+    z-index: 999;
+    transition: .3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
 @media (max-width: 1000px) {
     .services-container ul,
     .projects-grid,
@@ -309,6 +344,7 @@ footer p {
         font-size: 44px;
     }
 }
+
 
 @media (max-width: 700px) {
     nav {
